@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Muttley</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dc84bd2102.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/Logo.png" alt="">
+                <h1>Lojas Muttley</h1>
+            </div>
+            <div id="buscar">
+                <input type="text" id="buscar-input" placeholder="Pesquisar raças" oninput="buscarRaca()">
+                <button onclick="buscarSite()">buscar</button>
+            </div>
+            <div id="carrinho-icon" onclick="toggleCarrinho()">
+                <div class="imagem">
+                    <i class="fa-solid fa-cart-plus fa-2xl"></i>
+                </div>
+                <span id="cont-carrinho">0</span>
+            </div>
+            <div id="carrinho-itens" style="display: none;">
+                <ul id="itens-lista"></ul>
+                <span id="preco-total">Valor Total: R$ 0.00</span>
+                <button class="limpa" onclick="limparCarrinho()">Cancelar</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="container">
+            <div class="nome">
+                <h2 class="nome-secao">Meus Cachorros:</h2>
+            </div>
+            <div class="racas">
+                <div class="raca-linha">
+                    <div class="raca">
+                        <div class="imagem">
+                            <img src="img/WireFox.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Wire Fox Terrier</h3>
+                            <p>R$ 3.000,00</p>
+                            <button onclick="addCarrinho('Wire Fox Terrier', 3000.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="raca">
+                        <div class="imagem">
+                            <img src="img/Rottweiler.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Rottweiler</h3>
+                            <p>R$ 2.000,00</p>
+                            <button onclick="addCarrinho('Rottweiler', 2000.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="raca">
+                        <div class="imagem">
+                            <img src="img/MastimTibetano.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Mastim Tibetano</h3>
+                            <p>R$ 1.000.000,00</p>
+                            <button onclick="addCarrinho('Mastim Tibetano', 1000000.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="raca-linha">
+                    <div class="raca">
+                        <div class="imagem">
+                            <img class="ALE" src="img/DogAlemão.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Dogue Alemão</h3>
+                            <p>R$ 700,00</p>
+                            <button onclick="addCarrinho('Dogue Alemão', 700)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="raca">
+                        <div class="imagem">
+                            <img class="DOG" src="img/Doberman.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Doberman</h3>
+                            <p>R$ 1.500,00</p>
+                            <button onclick="addCarrinho('Doberman', 1500)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                    <div class="raca">
+                        <div class="imagem">
+                            <img src="img/Dauchshund.png" alt="">
+                        </div>
+                        <div class="infos">
+                            <h3>Dauchshund</h3>
+                            <p>R$ 2.500,00</p>
+                            <button onclick="addCarrinho('Dauchshund', 2500.00)">Adicionar ao carrinho</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
