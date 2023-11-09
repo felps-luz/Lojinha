@@ -26,7 +26,11 @@ function addCarrinho(itemNome, itemPreco){
         liItem: liItem
         }
     }
-    document.getElementById("preco-total").innerHTML = "Total R$" +precoTotal.toFixed(2)
+    let precoTotal = 0
+    for(let itemNome in itensCarrinho){
+        precoTotal += itensCarrinho[itemNome].precoTotal
+    }
+    document.getElementById('preco-total').innerHTML = "Total R$" +precoTotal.toFixed(2)
     updateCarrinho()
 }
 

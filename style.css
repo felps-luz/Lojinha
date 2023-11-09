@@ -47,9 +47,6 @@ input{
 .raca .DOG{
     height: 260px;
 }
-.raca .ALE{
-    height: 200px;
-}
 .logo img{
     width: 140px;
 }
@@ -57,4 +54,25 @@ header button{
     width: 70px;
     border-radius: 2px;
 }
+.logo h1{
+    font: 700 35px 'lucida',sans-serif ;
+}
+#main h2{
+    font: 700 25px 'lucida',sans-serif ;
+}
+#main h3, #main p{
+    font: 700 18px 'lucida',sans-serif ;
+}
+#main button{
+    width: 200px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: orange;
+    color: white;
+    font: 400 15px 'lucida',sans-serif ;
+}
+#main button:hover{
+    
+}
+
 
