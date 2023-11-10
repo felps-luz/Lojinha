@@ -72,6 +72,14 @@ header button{
     font: 400 15px 'lucida',sans-serif ;
 }
 #main button:hover{
+    width: 220px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.79);
+    transition: 0.6s;
+    color: orange;
+}
+#main button:not(:hover){
+    transition: 0.6s;
     
 }
 
